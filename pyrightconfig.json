@@ -1,0 +1,11 @@
+{
+    "include": [
+        "backend"
+    ],
+    "extraPaths": [
+        "c:/Users/User/OneDrive/Documents/GitHub/Complaint management system/backend",
+        "C:/Users/User/AppData/Roaming/Python/Python311/site-packages"
+    ],
+    "typeCheckingMode": "basic",
+    "pythonVersion": "3.11"
+}
