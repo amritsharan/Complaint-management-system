@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:8002'; // FastAPI backend address
+const API_URL = window.APP_CONFIG?.API_URL || 'http://127.0.0.1:8002'; // FastAPI backend address
 
 const decodeJwtPayload = (token) => {
     const payloadPart = token.split('.')[1];

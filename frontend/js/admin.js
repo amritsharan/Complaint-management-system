@@ -1,4 +1,4 @@
-const API_URL = 'http://127.0.0.1:8002';
+const API_URL = window.APP_CONFIG?.API_URL || 'http://127.0.0.1:8002';
 
 document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('token');

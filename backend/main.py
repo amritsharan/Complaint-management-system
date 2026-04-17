@@ -1,16 +1,13 @@
-import sys
-import site
 import os
 import asyncio
 import json
 import math
 import re
 from collections import Counter
+from dotenv import load_dotenv
 
-# Add user site-packages to sys.path BEFORE any other imports
-user_site = site.getusersitepackages()
-if user_site not in sys.path:
-    sys.path.insert(0, user_site)
+# Load .env file (works locally and is safely ignored on Render where env vars are set directly)
+load_dotenv()
 
 from fastapi import FastAPI, Depends, HTTPException, status, Body
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm

@@ -1,9 +1,10 @@
 fastapi>=0.115.0
-uvicorn
-pymongo
-aiosqlite
+uvicorn[standard]
+gunicorn
+pymongo[srv]
 passlib[bcrypt]
 python-jose[cryptography]
 pydantic[email]
 python-multipart
 python-dotenv
+dnspython
