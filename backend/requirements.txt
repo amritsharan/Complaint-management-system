@@ -2,9 +2,11 @@ fastapi>=0.115.0
 uvicorn[standard]
 gunicorn
 pymongo[srv]
+dnspython
 passlib[bcrypt]
+bcrypt==4.0.1
 python-jose[cryptography]
 pydantic[email]
+email-validator
 python-multipart
 python-dotenv
-dnspython
